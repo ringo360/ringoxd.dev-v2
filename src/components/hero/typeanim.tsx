@@ -5,7 +5,7 @@ export function TypeAnim() {
 	return (
 		<>
 			<TypeAnimation
-				sequence={["High school student in Japan", 1500, "TeamSekai Founder", 1500, "Itzme Founder(Release soon lol)", 1500, "FullStack Developer", 2500]}
+				sequence={["High school student", 2500, "Average Chino lover", 1500, "TeamSekai Founder", 1500, "Itzme Founder", 1500, "FullStack Developer", 1500]}
 				wrapper="span"
 				speed={50}
 				repeat={Infinity}
