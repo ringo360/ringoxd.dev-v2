@@ -1,6 +1,7 @@
 ---
 import { TypeAnim } from "./typeanim";
-import Me from '../me/index.astro'
+import Card from '../me/card/index.astro'
+import Skill from '../me/skill/index.astro'
 ---
 
 <div class="title flex flex-center flex-column">
@@ -8,13 +9,14 @@ import Me from '../me/index.astro'
 	<h1>Hi! I'm ringoXD.</h1>
 	<h2>I'm a <TypeAnim client:idle /></h2>
 </div>
-<Me />
+<Card />
+<Skill />
 
 <style>
 	.title {
 		margin: 0px;
 		width: auto;
-		height: 60vh;
+		height: 75vh;
 	}
 	.title img {
 		border-radius: 50%;
@@ -28,12 +30,10 @@ import Me from '../me/index.astro'
 	.title h1 {
 		animation: slideanim 0.75s ease 1.5s forwards;
 		opacity: 0;
-		font-size: 2.25em;
 	}
 	.title h2 {
 		animation: slideanim 0.75s ease 1.63s forwards;
 		opacity: 0;
-		font-size: 1.5em;
 	}
 	.title h1,
 	.title h2 {
