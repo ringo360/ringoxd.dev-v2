@@ -2,8 +2,8 @@
 import Card from '../../ui/Card.astro'
 ---
 
-<div class="can flex flex-center flex-col min-h-[400px]">
-	<h1 class="m-4">What I can do?</h1>
+<div class="can flex flex-center flex-col min-h-[380px]">
+	<h1 class="my-8">What I can do?</h1>
 
 	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-3/4">
 	<Card
@@ -20,3 +20,11 @@ import Card from '../../ui/Card.astro'
 	/>
 	</div>
 </div>
+
+<style>
+	.can {
+		margin: 10px;
+		animation: slideanim 0.75s ease 2.50s forwards;
+		opacity: 0;
+	}
+</style>

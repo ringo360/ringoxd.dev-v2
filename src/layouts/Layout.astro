@@ -25,11 +25,25 @@ const { title, description } = Astro.props;
 	:root {
 		--background: #13151a;
 	}
+	
+	@font-face {
+		font-family: 'Lexend';
+		src: url('/fonts/Lexend.woff') format('woff');
+		font-weight: 300;
+		font-style: normal;
+		font-optical-sizing: auto;
+	}
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: "Lexend", system-ui,sans-serif;
 		background: var(--background);
 		background-size: 224px;
 		color:white;
+		/*
+		font-family: "Lexend", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 300;
+		font-style: normal;
+		*/
 	}
 	code {
 		font-family:
