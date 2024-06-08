@@ -1,19 +1,15 @@
 ---
 import { TypeAnim } from "./typeanim";
-import Card from '../me/card/index.astro'
-import Skill from '../me/skill/index.astro'
 ---
 
 <div class="title flex flex-center flex-column">
 	<aside class="me-background">
-		<img class="me-bgimg" src="/assets/chino-mail-rgb-edge.png" draggable="false">
+		<img class="me-bgimg" src="/assets/chino-mail-rgb-edge.webp" draggable="false">
 	</aside>
 	<img class="me-icon" src="/me.webp" draggable="false">
 	<h1>Hi! I'm ringoXD.</h1>
 	<h2>I'm a <TypeAnim client:idle /></h2>
 </div>
-<Card />
-<Skill />
 
 <style>
 	.title {

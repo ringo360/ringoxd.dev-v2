@@ -1,0 +1,20 @@
+---
+interface Props {
+	title: string;
+	body: string;
+	href: string;
+}
+
+const { title, body, href } = Astro.props;
+---
+
+<a href={href} class="linkcarduwu block max-w-sm p-6 border rounded-lg bg-opacity-75 shadow-sm">
+	<h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
+	<p class="font-normal text-gray-700 dark:text-gray-400">{body}</p>
+</a>
+
+<style>
+	.linkcarduwu {
+		border: 1px solid hsl(240 3.7% 15.9%);
+	}
+</style>
