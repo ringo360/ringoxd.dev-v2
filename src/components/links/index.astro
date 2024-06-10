@@ -1,3 +1,32 @@
-<div class="flex flex-center flex-col min-h-[200px]">
-	<h1>fuck me</h1>
+---
+import Link from "../ui/LinkCard.astro"
+---
+
+<div class="links flex flex-center flex-col min-h-[200px]">
+	<h1 class="my-8">Links</h1>
+	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-3/4">
+		<Link 
+		href="https://blog.ringoxd.dev/"
+		title="Blog"
+		body="My blog."
+		/>
+		<Link 
+		href="https://github.com/ringo360"
+		title="Github"
+		body="@ringo360"
+		/>
+		<Link 
+		href="https://mk.shrimpia.network/@ringoxd"
+		title="Shrimpia"
+		body="@ringoxd"
+		/>
+	</div>
 </div>
+
+<style>
+	.links {
+		margin: 10px;
+		animation: slideanim 0.75s ease 2.50s forwards;
+		opacity: 0;
+	}
+</style>
