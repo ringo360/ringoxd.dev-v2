@@ -25,17 +25,17 @@ const { title, body, href } = Astro.props;
 	.linkc:hover {
 		animation: lanim 2s ease infinite;
 	}
+	
 	@keyframes lanim {
 		0% {
-			border: 1px solid hsl(240 3.7% 15.9%);
-		}
-		50% {
 			border: 1px solid hsl(234, 100%, 61%);
 		}
-		100% {
-			border: 1px solid hsl(240 3.7% 15.9%);
+		50% {
+			border: 1px solid hsl(290, 100%, 59%);
 		}
-
+		100% {
+			border: 1px solid hsl(234, 100%, 61%);
+		}
 	}
 
 </style>
