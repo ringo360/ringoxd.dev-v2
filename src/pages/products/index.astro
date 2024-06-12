@@ -1,0 +1,63 @@
+---
+import Layout from "../../layouts/Layout.astro"
+import Header from "../../components/Header/index.astro"
+import Footer from "../../components/Footer/index.astro"
+---
+
+<Layout title="Products" description="My Project/Products">
+	<Header />
+	<div class="title flex flex-center flex-column">
+		<aside class="me-background">
+			<img class="me-bgimg" src="/assets/chino-mail-rgb-edge.webp" draggable="false">
+		</aside>
+		<h1>Products</h1>
+	</div>
+	<Footer />
+</Layout>
+
+<style>
+	.title {
+		margin: 0px;
+		width: auto;
+		height: 75vh;
+	}
+	.me-background {
+		margin: 0;
+		padding: 0;
+	}
+	.me-bgimg {
+		position: fixed;
+		object-fit: cover;
+		width: auto;
+		height: 100vh;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);  
+		z-index: -100;
+		animation: bganim 1.25s ease-in-out 1.75s forwards;
+		opacity: 0;
+	}
+
+	.title h1 {
+		animation: slideanim 1s ease 0.25s forwards;
+		opacity: 0;
+	}
+	.title h2 {
+		animation: slideanim 1s ease 0.75s forwards;
+		opacity: 0;
+	}
+	.title h1,
+	.title h2 {
+		margin: 5px;
+	}
+	@keyframes bganim {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 0.4;
+		}
+	}
+	@media (max-width: 720px) {
+	}
+</style>
