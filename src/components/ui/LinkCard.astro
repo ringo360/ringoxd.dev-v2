@@ -23,15 +23,12 @@ const { title, body, href } = Astro.props;
 		border: 1px solid hsl(240 3.7% 15.9%);
 	}
 	.linkc:hover {
-		animation: lfade 0.5s ease forwards, lanim 2s ease 0.75s infinite;
+		animation: lfade 0.75s ease forwards, lanim 3s ease 0.9s infinite;
 	}
 
 	@keyframes lfade {
 		0% {
 			border: 1px solid hsl(240 3.7% 15.9%);
-		}
-		30% {
-			border: 1px solid hsl(202, 75%, 47%);
 		}
 		100% {
 			border: 1px solid hsl(234, 100%, 61%);
@@ -43,7 +40,7 @@ const { title, body, href } = Astro.props;
 			border: 1px solid hsl(234, 100%, 61%);
 		}
 		50% {
-			border: 1px solid hsl(290, 100%, 59%);
+			border: 1px solid hsl(234, 100%, 50%);
 		}
 		100% {
 			border: 1px solid hsl(234, 100%, 61%);
