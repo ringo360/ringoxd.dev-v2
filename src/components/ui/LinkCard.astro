@@ -23,7 +23,19 @@ const { title, body, href } = Astro.props;
 		border: 1px solid hsl(240 3.7% 15.9%);
 	}
 	.linkc:hover {
-		animation: lanim 2s ease infinite;
+		animation: lfade 0.5s ease forwards, lanim 2s ease 0.75s infinite;
+	}
+
+	@keyframes lfade {
+		0% {
+			border: 1px solid hsl(240 3.7% 15.9%);
+		}
+		30% {
+			border: 1px solid hsl(202, 75%, 47%);
+		}
+		100% {
+			border: 1px solid hsl(234, 100%, 61%);
+		}
 	}
 	
 	@keyframes lanim {
