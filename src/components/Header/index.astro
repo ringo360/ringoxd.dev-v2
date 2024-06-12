@@ -1,0 +1,32 @@
+---
+import HLink from "./HLink.astro"
+---
+
+<header>
+	<nav class="flex items-center justify-between">
+		<h2>ringoxd.dev</h2>
+		<div class="jump">
+			<HLink href="/404">Dev</HLink>
+			<HLink href="/404">Dev</HLink>
+			<HLink href="/404">Dev</HLink>
+		</div>
+	</nav>
+</header>
+
+<style>
+	header {
+		margin: 0;
+		padding: 0 1em;
+		background: rgba(0, 0, 0, 0.4);
+		box-shadow: 0 2px rgb(255, 255, 255), 5%;
+	}
+	nav a {
+		padding: 1em 0.5em;
+		border-bottom: 4px solid transparent;
+		text-decoration: none;
+	}
+	h2 a,
+	h2 a.active {
+		text-decoration: none;
+	}
+</style>
