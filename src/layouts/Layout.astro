@@ -4,6 +4,9 @@ interface Props {
 	description: string;
 }
 
+import { ViewTransitions } from 'astro:transitions';
+import Background  from '../components/ui/Background.astro'
+
 const { title, description } = Astro.props;
 ---
 
@@ -16,8 +19,10 @@ const { title, description } = Astro.props;
 		<link rel="icon" href="/favicon.ico">
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
 	<body>
+		<Background transition:persist/>
 		<slot />
 	</body>
 </html>
@@ -75,6 +80,30 @@ const { title, description } = Astro.props;
 	}
 	a:hover {
 		color: aquamarine;
+	}
+	.me-background {
+		margin: 0;
+		padding: 0;
+	}
+	.me-bgimg {
+		position: fixed;
+		object-fit: cover;
+		width: auto;
+		height: 100vh;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);  
+		z-index: -100;
+		animation: bganim 1.25s ease-in-out 1.75s forwards;
+		opacity: 0;
+	}
+	@keyframes bganim {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 0.4;
+		}
 	}
 
 

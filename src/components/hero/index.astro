@@ -3,9 +3,6 @@ import { TypeAnim } from "./typeanim";
 ---
 
 <div class="title flex flex-center flex-column">
-	<aside class="me-background">
-		<img class="me-bgimg" src="/assets/chino-mail-rgb-edge.webp" draggable="false">
-	</aside>
 	<img class="me-icon" src="/me.webp" draggable="false">
 	<h1>Hi! I'm ringoXD.</h1>
 	<h2>I'm a <TypeAnim client:idle /></h2>
@@ -25,22 +22,6 @@ import { TypeAnim } from "./typeanim";
 		opacity: 0;
 		margin: 20px;
 	}
-	.me-background {
-		margin: 0;
-		padding: 0;
-	}
-	.me-bgimg {
-		position: fixed;
-		object-fit: cover;
-		width: auto;
-		height: 100vh;
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);  
-		z-index: -100;
-		animation: bganim 1.25s ease-in-out 1.25s forwards;
-		opacity: 0;
-	}
 
 	.title h1 {
 		animation: slideanim 0.75s ease 1.5s forwards;
@@ -53,14 +34,6 @@ import { TypeAnim } from "./typeanim";
 	.title h1,
 	.title h2 {
 		margin: 5px;
-	}
-	@keyframes bganim {
-		from {
-			opacity: 0;
-		}
-		to {
-			opacity: 0.4;
-		}
 	}
 	@media (max-width: 720px) {
 	}
