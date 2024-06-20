@@ -6,27 +6,23 @@ import Footer from "../../components/Footer/index.astro"
 import LinkCard from "../../components/ui/LinkCard.astro"
 ---
 
-<Layout title="Products" description="My Project/Products">
+<Layout title="Products | ringoXD" description="My Project/Products">
 	<Header />
 	<div class="title flex flex-center flex-column">
 		<h1>Products</h1>
+		<h2>Tools and apps</h2>
 	</div>
-	<div class="flex flex-center flex-column">
+	<div class="products flex flex-center flex-column">
 		<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-3/4">
 			<LinkCard
-			href="https://r.a1z.uk/"
-			title='URL Shortener'
-			body='You tired too looooong URL? Use this!'
+			href="https://sekai.ringoxd.dev/"
+			title='Sekai'
+			body='We developing beneficial projects!'
 			/>
 			<LinkCard
-			href="https://r.a1z.uk/"
-			title='URL Shortener'
-			body='You tired too looooong URL? Use this!'
-			/>
-			<LinkCard
-			href="https://r.a1z.uk/"
-			title='URL Shortener'
-			body='You tired too looooong URL? Use this!'
+			href="https://github.com/ringo360/msky-discord-hook-worker"
+			title='Misskey to Discord Hooker'
+			body='Send Misskey notifications to Discord. (w/CF Workers)'
 			/>
 			<LinkCard
 			href="https://r.a1z.uk/"
@@ -34,15 +30,24 @@ import LinkCard from "../../components/ui/LinkCard.astro"
 			body='You tired too looooong URL? Use this!'
 			/>
 		</div>
+		<div class=" text-gray-400 flex flex-col items-center">
+			<p>This is not all!</p>
+			<p>Check out <a href="https://github.com/ringo360?tab=repositories">my repositories!</a></p>
+		</div>
 	</div>
 	<Footer />
 </Layout>
 
 <style>
+	.products {
+		margin: 10px;
+		animation: slideanim 0.75s ease 1.25s forwards;
+		opacity: 0;
+	}
 	.title {
 		margin: 0px;
 		width: auto;
-		height: 75vh;
+		height: 30vh;
 	}
 
 	.title h1 {
